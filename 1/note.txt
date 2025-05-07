@@ -1,0 +1,59 @@
+1.ipnyb =====loan_data
+1.1.ipnyb====tiatanic
+
+you can implement based on dataset that they have given
+
+Data Wrangling in Python
+Data wrangling is the process of cleaning, transforming, and organizing raw data into a structured format for analysis. It involves handling missing values, formatting data types, and converting categorical variables into numerical representations.
+
+Step 1: Import Required Libraries
+To begin, we need to import essential Python libraries:
+
+python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+These libraries help with data manipulation (pandas), numerical operations (numpy), visualization (matplotlib and seaborn).
+
+Step 2: Locate an Open Source Dataset
+You can find open-source datasets on platforms like Kaggle or GitHub. For example, the Titanic dataset is widely used for data wrangling exercises.
+
+Step 3: Load the Dataset
+Once you have the dataset, load it into a Pandas DataFrame:
+
+python
+df = pd.read_csv('titanic.csv')  # Replace with actual dataset path
+df.head()  # Display first few rows
+Step 4: Data Preprocessing
+Checking for Missing Values
+python
+df.isnull().sum()
+This command identifies missing values in each column.
+
+Basic Statistics
+python
+df.describe()
+Provides summary statistics like mean, median, and standard deviation.
+
+Checking Data Dimensions
+python
+df.shape
+Returns the number of rows and columns.
+
+Step 5: Data Formatting & Normalization
+Checking Data Types
+python
+df.dtypes
+This helps identify incorrect data types.
+
+Converting Data Types
+python
+df['Age'] = df['Age'].astype('int')  # Convert Age to integer
+Step 6: Converting Categorical Variables
+Categorical variables need to be converted into numerical format:
+
+python
+df = pd.get_dummies(df, columns=['Sex'])
+df.head()
+This creates separate columns for male and female.
