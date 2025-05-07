@@ -1,0 +1,29 @@
+2 =====AcademicPerformance
+2.2 ======academic_performance
+
+
+Data Wrangling II refers to the process of cleaning, transforming, and organizing raw data into a structured format for analysis. It is a continuation of Data Wrangling I, focusing on deeper data preprocessing techniques.
+
+. Handling Missing Values and Inconsistencies
+Data often contains missing values and inconsistencies due to errors in collection or recording. Here are common techniques to handle them:
+
+Deletion: If missing values are minimal, rows or columns can be removed.
+
+Imputation: Filling missing values using mean, median, mode, or predictive techniques like regression and KNN imputation.
+
+Forward or Backward Fill: Using previous or next values to fill missing data.
+
+Custom Handling: Identifying inconsistencies and using logical replacements.
+
+2. Identifying and Treating Outliers
+Outliers are extreme values that can distort analysis. Methods to detect and handle outliers include:
+
+Visualization: Box plots, histograms, and scatter plots help in detecting outliers.
+
+Statistical Methods: Using Z-scores or the Interquartile Range (IQR) to identify anomalies.
+
+Winsorizing: Transforming outliers to near-boundary values.
+
+Capping: Setting upper and lower bounds for values.
+
+Removing Outliers: If an outlier is due to an error, it can be removed.
