@@ -1,0 +1,35 @@
+Logistic Regression & Confusion Matrix in Data Analytics II
+1. Logistic Regression for Classification
+Logistic Regression is a statistical method used for binary classification problems. It predicts the probability that a given input belongs to a particular class.
+
+Formula: The logistic function (sigmoid function) is given by:
+
+𝑃
+(
+𝑌
+=
+1
+)
+=
+1
+1
++
+𝑒
+−
+(
+𝑏
+0
++
+𝑏
+1
+𝑋
+)
+where 
+𝑏
+0
+ and 
+𝑏
+1
+ are coefficients learned from the data.
+
+Application in Social_Network_Ads Dataset: The dataset contains information about users, including age, estimated salary, and whether they purchased a product. Logistic Regression helps classify whether a user will buy t
