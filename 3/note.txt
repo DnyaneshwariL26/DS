@@ -1,0 +1,29 @@
+Descriptive Statistics: Measures of Central Tendency and Variability
+Descriptive statistics help summarize and interpret data using key measures such as mean, median, mode, range, variance, and standard deviation. These measures provide insights into the distribution and spread of data.
+
+1. Summary Statistics for a Dataset
+We will use Pandas to compute summary statistics for a dataset, grouping numeric variables by a categorical variable.
+
+Python Code:
+python
+import pandas as pd
+
+# Sample dataset
+data = {'Age Group': ['Young', 'Young', 'Middle-aged', 'Middle-aged', 'Senior', 'Senior'],
+        'Income': [25000, 27000, 50000, 52000, 70000, 75000]}
+
+df = pd.DataFrame(data)
+
+# Grouping by categorical variable and calculating summary statistics
+summary_stats = df.groupby('Age Group')['Income'].describe()
+print(summary_stats)
+Output Explanation:
+This code groups Income by Age Group and provides summary statistics such as:
+
+Mean: Average income within each age group.
+
+Median: Middle value of income distribution.
+
+Min/Max: Lowest and highest income values.
+
+Standard Deviation: Spread of income values.
