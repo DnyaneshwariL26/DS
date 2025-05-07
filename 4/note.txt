@@ -1,0 +1,30 @@
+Boston Housing Dataset & Linear Regression Model
+The Boston Housing Dataset is a well-known dataset used for regression analysis. It contains 506 samples with 14 feature variables, including factors like crime rate, number of rooms, and accessibility to highways. The goal is to predict house prices based on these features.
+
+Linear Regression Model for Prediction
+Linear Regression is a statistical method used to model the relationship between a dependent variable (house price) and one or more independent variables (features like crime rate, number of rooms, etc.).
+
+Steps to Build the Model in Python
+Load the Dataset
+
+Use pandas to read the dataset.
+
+Explore the dataset using df.head() and df.describe().
+
+Preprocess the Data
+
+Handle missing values.
+
+Normalize or scale features if necessary.
+
+Split Data into Training & Testing Sets
+
+Use train_test_split() from sklearn.model_selection.
+
+Train the Linear Regression Model
+
+Use LinearRegression() from sklearn.linear_model.
+
+Evaluate the Model
+
+Calculate metrics like Mean Squared Error (MSE) and R-squared.
